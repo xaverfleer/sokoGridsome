@@ -1,0 +1,6 @@
+- add meta tags
+  - title
+  - description
+- add content
+- build
+- upload
