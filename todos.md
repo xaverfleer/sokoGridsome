@@ -1,3 +1,9 @@
+- add gdpr
+- fix pricing link
+- fix source-sans-pro font
+- add kurs page and fix kurs links
+- add content
+- add footer
 - fix links on /index
 - add meta tags
   - title
