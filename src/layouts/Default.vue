@@ -174,6 +174,11 @@ module.exports = {
 </script>
 
 <style>
+* {
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
 body {
   font-size: 2rem;
   margin: 0 auto;
