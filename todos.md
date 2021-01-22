@@ -11,3 +11,4 @@
 - add content
 - build
 - upload
+- wir -> ich,uns -> ich, unser -> mein
