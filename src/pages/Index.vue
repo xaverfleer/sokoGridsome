@@ -28,7 +28,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Nährende kommunikation mit deinem Baby  | so* kommunizieren!",
+    title: "Nährende kommunikation mit deinem Baby",
   },
 };
 </script>

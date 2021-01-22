@@ -8,4 +8,5 @@ module.exports = {
   icon: "/favicon.ico",
   siteName: "so* kommunizieren",
   plugins: [],
+  titleTemplate: "%s | so* kommunizieren",
 };
