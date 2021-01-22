@@ -236,7 +236,7 @@ html {
   background-size: cover;
   flex-basis: 350px;
   opacity: 0.25;
-  background-image: url(../assets/mother-father-and-baby.jpg);
+  background-image: url(../assets/mother-father-and-baby-sepia.jpg);
 }
 
 .header__logo {

@@ -98,6 +98,56 @@
           ></iframe>
         </div>
       </section>
+      <section class="section section--contents" id="contents">
+        <h2>Inhalte</h2>
+        <p>
+          Der Onlinekurs zur
+          <em>subjektorientierten</em> Kommunikation mit Babys besteht aus 5
+          Blöcken mit Videos, Übungen, Vertiefungen, Zusammenfassungen und
+          Strategiekarten. Es geht um die Frage, was Babys brauchen, um sich
+          gesund entwickeln zu können und innerlich stark zu werden. Wir zeigen
+          dir...
+        </p>
+        <div class="checklist">
+          <div class="checklist__item">
+            <div class="checklist__text">
+              ...was es heisst, dein Baby als gleichwürdiges Subjekt
+              wahrzunehmen und zu behandeln&nbsp;(Kursblock&nbsp;1)
+            </div>
+          </div>
+          <div class="checklist__item">
+            <div class="checklist__text">
+              ...wie du im Alltag immer wieder in echte und nährende
+              Interaktionen mit deinem Baby treten kannst, zum Beispiel wenn du
+              das Baby pflegst.&nbsp;(Kursblock&nbsp;2)
+            </div>
+          </div>
+          <div class="checklist__item">
+            <div class="checklist__text">
+              ...wie du die Signale und das Verhalten deines Babys aktiv lesen
+              und angemessen darauf reagieren kannst.&nbsp;(Kursblock&nbsp;3)
+            </div>
+          </div>
+          <div class="checklist__item">
+            <div class="checklist__text">
+              ...wie du dich selbst stärken kannst, damit du genügend Ressourcen
+              für den Alltag mit deinem Baby hast.&nbsp;(Kursblock&nbsp;4)
+            </div>
+          </div>
+          <div class="checklist__item">
+            <div class="checklist__text">
+              ...wie du das Spielen und Forschen deines Babys begleiten kannst,
+              damit es in seinem Forschungsdrang gestärkt
+              wird.&nbsp;(Kursblock&nbsp;5)
+            </div>
+          </div>
+        </div>
+        <g-image
+          alt="Glückliche Familie spielt im Bett"
+          class="img"
+          src="../assets/mother-father-and-baby.jpg"
+        />
+      </section>
     </main>
   </Layout>
 </template>
@@ -180,6 +230,25 @@ export default {
   /* text-align: flex-end; */
 }
 
+.checklist__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.checklist__item::before {
+  flex: 0 0 32px;
+  height: 32px;
+  content: " ";
+  background-image: url(../assets/check-24px.svg);
+  background-repeat: no-repeat;
+  margin: 0 1em 0 2em;
+}
+
+.checklist__text {
+  margin-right: 3em;
+}
+
 .early-bird__icon {
   position: absolute;
   top: -48px;
@@ -200,17 +269,22 @@ export default {
   margin: 0.1rem 0;
 }
 
+.img {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .main {
   margin: 1em 0 3em;
 }
 
 .section {
   padding: 2em 1em 1em;
-  /* border-radius: 5px; */
+  border-radius: 5px;
 }
 
 .section:nth-of-type(2n) {
-  /* background-color: #f6ede2; */
+  background-color: #f6ede2;
 }
 
 .section:nth-of-type(2n) .document {
