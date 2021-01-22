@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <main>
       <section class="section hero">
         <p class="hero__supertitle">
           Onlinekurs für Eltern, Bezugs- und&nbsp;Betreuungspersonen
@@ -147,6 +148,98 @@
           class="img"
           src="../assets/mother-father-and-baby.jpg"
         />
+      </section>
+      <section class="section" id="offer">
+        <h2>Angebot</h2>
+        <div class="value-proposition">
+          <div class="value-proposition__entry">
+            <g-image
+              alt="Film als Symbol für Videos"
+              class="value-proposition__icon"
+              src="../assets/inputvideos.svg"
+              width="120"
+            />
+            <h3 class="value-proposition__titie">Inputvideos</h3>
+            <div class="value-proposition__description">
+              <br />
+              5&thinsp;x 40&thinsp;-&thinsp;90 Minuten animierte Videos bieten
+              Wissen und Strategien für einen einfühlsamen, wertschätzenden und
+              stärkenden Umgang mit Babys.
+            </div>
+          </div>
+          <div class="value-proposition__entry">
+            <g-image
+              alt="Fussball als Symbol für Übungen"
+              class="value-proposition__icon"
+              src="../assets/fussball.svg"
+              width="120"
+            />
+            <h3 class="value-proposition__titie">Übungen</h3>
+            <div class="value-proposition__description">
+              <br />
+              Ein breites Angebot an Übungen hilft dir, die Inhalte aus den
+              Videos zu vertiefen und zu festigen.
+            </div>
+          </div>
+          <div class="value-proposition__entry">
+            <g-image
+              alt="Offenes Buch als Symbol für Zusammenfassungen"
+              class="value-proposition__icon"
+              src="../assets/offenes-buch.svg"
+              width="120"
+            />
+            <h3 class="value-proposition__titie">Zusammenfassungen</h3>
+            <div class="value-proposition__description">
+              <br />
+              Zusammenfassungen der wichtigsten Kursinhalte ermöglichen einen
+              raschen Überblick und eine schnelle Repetition der Themen.
+            </div>
+          </div>
+          <div class="value-proposition__entry">
+            <g-image
+              alt="Strategiekarten"
+              class="value-proposition__icon"
+              src="../assets/strategiekarten.svg"
+              width="120"
+            />
+            <h3 class="value-proposition__titie">Strategiekarten</h3>
+            <div class="value-proposition__description">
+              <br />
+              Alle zwanzig Kommunikationsstrategien aus dem Kurs findest du
+              zusammengefasst auf je einer A5-Seite, z.B. zum Aufhängen als
+              Erinnerungshilfe.
+            </div>
+          </div>
+          <div class="value-proposition__entry">
+            <g-image
+              alt="Lupe als Symbol für Vertiefungsmaterial"
+              class="value-proposition__icon"
+              src="../assets/lupe.svg"
+              width="120"
+            />
+            <h3 class="value-proposition__titie">Vertiefungsmaterial</h3>
+            <div class="value-proposition__description">
+              <br />
+              Vertiefende Materialien im PDF-Format zu diversen Themen rund um
+              die Entwicklung des Babys stehen zum Download zur Verfügung.
+            </div>
+          </div>
+          <div class="value-proposition__entry">
+            <g-image
+              alt="Personen als Symbol für Online-Meetings"
+              class="value-proposition__icon"
+              src="../assets/personen.svg"
+              width="120"
+            />
+            <h3 class="value-proposition__titie">Online-Meetings</h3>
+            <div class="value-proposition__description">
+              <br />
+              Regelmässige Austauschrunden in online Meetings bieten die
+              Möglichkeit, Fragen zu stellen und Erfahrungen mit anderen
+              auszutauschen.
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </Layout>
@@ -297,6 +390,34 @@ export default {
   border-radius: 5px;
   transform: rotate(-2deg);
   margin: 3em 1em;
+}
+
+.value-proposition {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.value-proposition__entry {
+  flex: 1 0 14em;
+  max-width: 30em;
+  flex-grow: 1;
+  padding: 1em;
+  margin-bottom: 2em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.value-proposition__icon {
+  width: 50%;
+  max-width: 120px;
+}
+
+.value-proposition__titie {
+  margin-block-end: 0;
 }
 
 .vimeo-video__container {
