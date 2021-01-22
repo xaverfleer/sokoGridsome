@@ -47,7 +47,7 @@ module.exports = {
     // /* global XMLHttpRequest, alert, amplitude, document, localStorage, window */
     // import LogRocket from "logrocket";
 
-    // const header = document.querySelector(".header");
+    const header = document.querySelector(".header");
     const nav = document.querySelector(".nav");
     // const formElem = document.querySelector("form");
 
@@ -107,10 +107,10 @@ module.exports = {
       else classList.add("nav--active");
     });
 
-    // window.addEventListener("scroll", function toggleHeaderPositioning() {
-    //   if (window.pageYOffset > 360) header.classList.add("header--fixed");
-    //   else header.classList.remove("header--fixed");
-    // });
+    window.addEventListener("scroll", function toggleHeaderPositioning() {
+      if (window.pageYOffset > 350) header.classList.add("header--fixed");
+      else header.classList.remove("header--fixed");
+    });
 
     // function offsetAnchor() {
     //   if (window.location.hash.length !== 0) {
@@ -212,17 +212,16 @@ html {
   flex-direction: column;
 }
 
-/* .header--fixed {
+.header--fixed {
   margin-bottom: 56px;
 }
 
 .header--fixed .header__content {
   position: fixed;
-  top: 0;
-  left: 8px;
-  right: 8px;
+  left: 0;
+  right: 0;
   z-index: 80;
-} */
+}
 
 .header__content {
   position: relative;
