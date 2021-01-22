@@ -180,6 +180,13 @@ body {
   max-width: 900px;
 }
 
+h1,
+h1 *,
+h2,
+h3 {
+  font-family: serif;
+}
+
 h1 {
   font-size: 5.236042rem;
 }
@@ -187,6 +194,10 @@ h1 {
 h2 {
   font-size: 3.23606rem;
 }
+html {
+  font-family: sans-serif;
+}
+
 .header {
   position: relative;
   display: flex;
