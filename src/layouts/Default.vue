@@ -175,7 +175,7 @@ module.exports = {
 
 <style>
 body {
-  font-family: source-sans-pro, sans-serif;
+  font-size: 2rem;
   margin: 0 auto;
   max-width: 900px;
 }
@@ -198,6 +198,7 @@ h2 {
 
 html {
   font-family: sans-serif;
+  font-size: 45%;
 }
 
 .header {
