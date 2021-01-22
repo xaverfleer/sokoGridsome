@@ -1,3 +1,4 @@
+- fix links on /index
 - add meta tags
   - title
   - description
