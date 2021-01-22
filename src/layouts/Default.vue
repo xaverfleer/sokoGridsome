@@ -193,7 +193,9 @@ h1 {
 
 h2 {
   font-size: 3.23606rem;
+  text-align: center;
 }
+
 html {
   font-family: sans-serif;
 }
