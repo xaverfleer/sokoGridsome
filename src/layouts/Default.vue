@@ -180,6 +180,13 @@ body {
   max-width: 900px;
 }
 
+h1 {
+  font-size: 5.236042rem;
+}
+
+h2 {
+  font-size: 3.23606rem;
+}
 .header {
   position: relative;
   display: flex;
