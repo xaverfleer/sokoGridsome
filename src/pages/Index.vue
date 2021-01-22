@@ -21,9 +21,9 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+    title: "Nährende kommunikation mit deinem Baby  | so* kommunizieren!",
+  },
+};
 </script>
 
 <style>
