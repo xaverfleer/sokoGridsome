@@ -310,4 +310,20 @@ html {
     overflow: hidden;
   }
 }
+
+@media screen and (min-width: 630px) {
+  .nav:not(.nav--kurs) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav:not(.nav--kurs)::before {
+    display: none;
+  }
+
+  .nav:not(.nav--kurs) .nav__entry {
+    margin: 0 10px;
+    display: block;
+  }
+}
 </style>
