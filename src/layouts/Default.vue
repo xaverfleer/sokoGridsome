@@ -227,8 +227,10 @@ textarea {
 }
 
 .header--fixed .header__content {
-  position: fixed;
   left: 0;
+  margin: auto;
+  max-width: 900px;
+  position: fixed;
   right: 0;
   z-index: 80;
 }
