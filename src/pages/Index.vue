@@ -301,7 +301,7 @@
               <div>Standardpreis</div>
             </div>
             <div class="booking-offer__entry booking-offer__detail">
-              Verfügbar, sobald der Kurs fertig produziert ist
+              Verfügbar, sobald der Kurs fertig produziert ist
             </div>
             <div class="booking-offer__entry booking-offer__detail">
               Zugang zu allen Kursinhalten
@@ -794,5 +794,18 @@ export default {
   /* left: 0; */
   height: 100%;
   width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .booking-offer__main {
+  }
+
+  .booking-offer {
+    flex: 1 0 0;
+  }
+
+  .booking-offers {
+    display: flex;
+  }
 }
 </style>
