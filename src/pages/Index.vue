@@ -582,6 +582,7 @@ export default {
 }
 
 .checklist__item::before {
+  background-position: center;
   flex: 0 0 32px;
   height: 32px;
   content: " ";
