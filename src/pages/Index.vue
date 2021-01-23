@@ -255,7 +255,7 @@
               <div>Early Bird – 80% Rabatt</div>
             </div>
             <div class="booking-offer__entry booking-offer__detail">
-              Sofort-Zugriff, sobald neue Inhalte existieren.
+              Sofort-Zugriff, sobald neue Inhalte existieren.
             </div>
             <div class="booking-offer__entry booking-offer__detail">
               Zugang zu allen Kursinhalten
