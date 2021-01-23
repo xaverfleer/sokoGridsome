@@ -30,6 +30,19 @@
       </div>
     </header>
     <slot />
+    <footer class="footer">
+      <div id="contact">
+        Kontaktiere uns unter
+        <a href="mailto:kurs@so-kommunizieren.ch" rel="nofollow"
+          >kurs@so-kommunizieren.ch</a
+        >
+        oder
+        <a href="tel:+41774466505" rel="nofollow">
+          +41 77 44 66 505
+        </a>
+      </div>
+      <div class="footer__copyright">© 2021 Fleer & Fleer</div>
+    </footer>
   </div>
 </template>
 
@@ -178,6 +191,10 @@ module.exports = {
   line-height: 1.3em;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-size: 2rem;
   font-weight: 300;
@@ -220,6 +237,21 @@ strong * {
 
 textarea {
   font-family: inherit;
+}
+
+.footer {
+  background-color: #966b40;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 90px;
+  text-align: center;
+  font-size: 1.23607rem;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .header {
@@ -317,7 +349,6 @@ textarea {
 /* this rule is needed to override user agents stylesheets */
 .nav a {
   color: #966b40;
-  text-decoration: none;
 }
 
 @media screen and (min-width: 500px) {
