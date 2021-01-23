@@ -241,6 +241,111 @@
           </div>
         </div>
       </section>
+      <section class="section " id="pricing">
+        <h2>Preise</h2>
+        <div class="booking-offers">
+          <div class="booking-offer booking-offer--primary">
+            <div
+              class="booking-offer__entry booking-offer__title booking-offer__title--primary"
+            >
+              Online-Kurs
+            </div>
+            <div class="booking-offer__entry booking-offer__main">
+              <div class="booking-offer__price">CHF 35</div>
+              <div>Early Bird – 80% Rabatt</div>
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              Sofort-Zugriff, sobald neue Inhalte existieren.
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              Zugang zu allen Kursinhalten
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Einstiegsübungen
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Inputvideos
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Zusammenfassungen
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Strategiekarten
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Vertiefungsmaterial
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Online-Meetings mit Eva
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              Noch 5 von 20 verfügbar.
+            </div>
+            <div class="buttons">
+              <a
+                class="button button--primary"
+                href="./kurs.html#/order"
+                title="Jetzt buchen"
+                >Jetzt buchen</a
+              >
+            </div>
+          </div>
+          <div class="booking-offer">
+            <div
+              class="booking-offer__entry booking-offer__title booking-offer__title--2ndary"
+            >
+              Online-Kurs
+            </div>
+            <div class="booking-offer__entry booking-offer__main">
+              <div class="booking-offer__price">CHF 179</div>
+              <div>Standardpreis</div>
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              Verfügbar, sobald der Kurs fertig produziert ist
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              Zugang zu allen Kursinhalten
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Einstiegsübungen
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Inputvideos
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Zusammenfassungen
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Strategiekarten
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Vertiefungsmaterial
+            </div>
+            <div class="booking-offer__entry booking-offer__detail">
+              inkl. Online-Meetings mit Eva
+            </div>
+          </div>
+        </div>
+        <h3>Aktueller Stand der Produktion</h3>
+        <div class="progress-list">
+          <div class="progress-list__item">
+            Kursblock 1 ist fertig gedreht und inkl. allen Dokumenten frei
+            verfügbar. <br />Kursblock 1 wird momentan überarbeitet.
+          </div>
+          <div class="progress-list__item progress-list__item--done">
+            Kursblock 2 ist gedreht und für Early-Birds verfügbar.
+          </div>
+          <div class="progress-list__item progress-list__item--done">
+            Kursblock 3 ist gedreht und für Early-Birds verfügbar.
+          </div>
+          <div class="progress-list__item progress-list__item--done">
+            Kursblock 4 ist gedreht und für Early-Birds verfügbar.
+          </div>
+          <div class="progress-list__item progress-list__item--done">
+            Kursblock 5 ist gedreht und für Early-Birds verfügbar.
+          </div>
+        </div>
+      </section>
     </main>
   </Layout>
 </template>
@@ -254,6 +359,47 @@ export default {
 </script>
 
 <style>
+.booking-offer {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000000;
+  margin: 1em;
+  text-align: center;
+  padding-bottom: 0.5em;
+  background-color: #ffffff;
+}
+
+.booking-offer__detail {
+  border-top: 1px solid #d9d9d9;
+}
+
+.booking-offer__entry {
+  padding: 0.5em;
+}
+
+.booking-offer__price {
+  font-size: 2em;
+}
+
+.booking-offer__title {
+  height: 3em;
+  border-radius: 5px 5px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking-offer__title--2ndary {
+  background-color: #e5cdad;
+}
+
+.booking-offer__title--primary {
+  background-color: #966b40;
+  color: #ffffff;
+}
+
 .button {
   /* border: none; */
   /* font-size: 1.4rem; */
