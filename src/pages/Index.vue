@@ -99,7 +99,7 @@
           ></iframe>
         </div>
       </section>
-      <section class="section section--contents" id="contents">
+      <section class="section" id="contents">
         <h2>Inhalte</h2>
         <p>
           Der Onlinekurs zur
