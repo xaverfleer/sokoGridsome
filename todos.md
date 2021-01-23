@@ -1,3 +1,5 @@
+- fix header width for large screens
+- add netlify functions
 - add gdpr
 - fix pricing link
 - fix source-sans-pro font
