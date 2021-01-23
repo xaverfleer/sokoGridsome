@@ -206,6 +206,11 @@ html {
   font-size: 45%;
 }
 
+strong,
+strong * {
+  font-weight: 700;
+}
+
 .header {
   position: relative;
   display: flex;

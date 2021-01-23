@@ -346,6 +346,57 @@
           </div>
         </div>
       </section>
+      <section class="section" id="about-us">
+        <h2>Über mich</h2>
+        <g-image
+          alt="Portrait von Eva Fleer"
+          class="img"
+          src="../assets/eva-fleer.jpg"
+          width="880"
+        />
+        <p>
+          <strong
+            >Trainerin für <em>subjketorientierte</em> Kommunikation mit
+            Babys</strong
+          ><br />
+          <strong>Leiterin Elternkompasskurse (in Ausbildung)</strong><br />
+          <strong>Master an der Pädagogischen Hochschule Bern</strong>
+        </p>
+        <br />
+        <p>
+          Ich bin Eva Fleer, ausgebildete und erfahrene Pädagogin und in
+          Ausbildung zur Leiterin von Kursen für Eltern gemäss dem Konzept
+          «Elternkompass». Im Verlauf dieser Ausbildung habe ich den Onlinekurs
+          zur subjektorientierten Kommunikation mit Babys erstellt. In diesem
+          Kurs trage ich Wissen und Strategien aus der Ausbildung, aus rund 50
+          Fachbüchern sowie aus den folgenden absolvierten Kursen zusammen:
+        </p>
+        <p></p>
+        <ul>
+          <li>Kurs «Familylab» nach Jesper Juul</li>
+          <li>
+            Kurs «Wie Kinder ihren Selbstwert entdecken» bei Fabian Grolimund
+          </li>
+          <li>Onlinekurs «Resilienisch» bei Nora Völker</li>
+          <li>
+            Onlinekurs «Die Kunst gelassen und empathisch zu erziehen» von
+            Lienhard Valentin
+          </li>
+          <li>Onlinekurs «Erziehen ohne Schimpfen» von Nicolas Schmidt</li>
+          <li>Onlinekurs «Mein Familienkompass» von Nora Imlau</li>
+        </ul>
+        <p>
+          Die «Theorie» erprobe ich täglich im Alltag mit meiner zweijährigen
+          Tochter. Dabei erlebe ich immer wieder, wie uns das Wissen und die
+          Strategien zur subjektorientierten Kommunikation beide stärken. Und
+          ich erlebe auch, wie ich im schnelllebigen, anforderungsreichen Alltag
+          immer wieder in alte Muster falle, den Kontakt zu meiner Tochter
+          verliere und herablassend kommuniziere. Das sind schmerzhafte und
+          dennoch lehrreiche Momente, die auf diesem spannenden Weg hin zu einer
+          verständnisvollen, wertschätzenden und stärkenden Kommunikation
+          dazugehören.
+        </p>
+      </section>
     </main>
   </Layout>
 </template>
