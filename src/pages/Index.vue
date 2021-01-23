@@ -397,6 +397,61 @@
           dazugehören.
         </p>
       </section>
+      <section class="section" id="contact">
+        <h2>Kontakt</h2>
+        <p>
+          Hast du Fragen, Anregungen, Wünsche oder einfach etwas mitzuteilen?
+          Ich freue mich über deine Nachricht.
+        </p>
+        <form class="form">
+          <div class="form-entry form-entry--halfwidth">
+            <label for="form__name" class="form-entry__label"
+              ><abbr title="Pflichtfeld" class="form-entry__required">* </abbr
+              >Name</label
+            >
+            <input
+              name="name"
+              id="form__name"
+              required="required"
+              type="text"
+              class="form-entry__input"
+            />
+            <div class="form-entry__help"></div>
+          </div>
+          <div class="form-entry form-entry--halfwidth">
+            <label for="form__email" class="form-entry__label"
+              ><abbr title="Pflichtfeld" class="form-entry__required">* </abbr
+              >E-Mail-Adresse</label
+            >
+            <input
+              name="email"
+              id="form__email"
+              required="required"
+              type="email"
+              class="form-entry__input"
+            />
+            <div class="form-entry__help"></div>
+          </div>
+          <div class="form-entry form-entry--fullwidth">
+            <label for="form__message" class="form-entry__label"
+              ><abbr title="Pflichtfeld" class="form-entry__required">* </abbr
+              >Nachricht</label
+            >
+            <textarea
+              name="message"
+              id="form__message"
+              rows="10"
+              class="form-entry__input"
+            ></textarea>
+            <div class="form-entry__help"></div>
+          </div>
+          <div class="buttons form__buttons">
+            <button class="button button--primary">
+              Nachricht senden
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
   </Layout>
 </template>
@@ -452,15 +507,14 @@ export default {
 }
 
 .button {
-  /* border: none; */
-  /* font-size: 1.4rem; */
+  border: none;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
   /* max-width: 12em; */
   padding: 0.75em;
-  /* min-height: 46px; */
+  min-height: 46px;
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -543,6 +597,93 @@ export default {
   position: absolute;
   top: -48px;
   left: 75%;
+}
+
+.form {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0 1em 1em 0;
+}
+
+.form--narrow {
+  /* max-width: 550px; */
+}
+
+.form__buttons {
+  flex: 1 0 100%;
+  justify-content: flex-end;
+  margin: 2.3em 0 0 1em;
+}
+
+.form-aligned {
+  /* margin: 1em 0 2em 1em; */
+}
+
+.form-buttons--dual {
+  /* justify-content: space-between; */
+}
+
+.form-buttons--sameline {
+  /* flex-grow: 0; */
+  /* flex-basis: auto; */
+}
+
+.form-entry {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 1em 0 0 1em;
+}
+
+.form-entry--fullwidth {
+  flex-basis: 100%;
+}
+
+.form-entry--halfwidth {
+  flex-basis: 40%;
+  min-width: 15em;
+}
+
+.form-entry__help {
+  /* margin: 0.3em 0 0 0.3em; */
+  /* color: #c23934; */
+  /* font-size: 1.4rem; */
+}
+
+.form-entry__input {
+  border-radius: 0.5em;
+  outline: none;
+  padding: 1.2rem;
+}
+
+.form-entry__label {
+  /* margin-right: 0.5em; */
+  margin-left: 0.3em;
+  margin: 0 0.5em 0 0.3em;
+}
+
+.form-entry--radio-container {
+  /* flex-direction: row; */
+  /* align-items: center; */
+}
+
+.form-entry__radio-input {
+  /* margin-left: 1rem; */
+  /* margin-right: 1rem; */
+}
+
+.form-entry__radio-label {
+  /* margin: 0 2rem 0 0; */
+}
+
+.form-entry__radio-label--disabled {
+  /* color: #aaaaaa; */
+}
+
+.form-entry__required {
+  text-decoration: none;
 }
 
 .hero__subjektorientiert {

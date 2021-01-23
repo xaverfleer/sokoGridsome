@@ -211,6 +211,10 @@ strong * {
   font-weight: 700;
 }
 
+textarea {
+  font-family: inherit;
+}
+
 .header {
   position: relative;
   display: flex;
