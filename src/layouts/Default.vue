@@ -21,7 +21,7 @@
           >
           <a class="nav__entry nav__entry--2ndary" href="#contents">Inhalte</a>
           <a class="nav__entry nav__entry--2ndary" href="#offer">Angebot</a>
-          <a class="nav__entry nav__entry--2ndary" href="#prizing">Preise</a>
+          <a class="nav__entry nav__entry--2ndary" href="#pricing">Preise</a>
           <a class="nav__entry nav__entry--2ndary" href="#about-us"
             >Über mich</a
           >

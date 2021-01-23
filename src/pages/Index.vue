@@ -77,7 +77,7 @@
             </a>
             <a
               class="button button--2ndary cta05"
-              href="#prizing"
+              href="#pricing"
               title="Jetzt buchen"
               >Jetzt buchen</a
             >
