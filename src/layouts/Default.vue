@@ -176,11 +176,11 @@ module.exports = {
 <style>
 * {
   line-height: 1.3em;
-  font-weight: 300;
 }
 
 body {
   font-size: 2rem;
+  font-weight: 300;
   margin: 0 auto;
   max-width: 900px;
 }
@@ -190,6 +190,7 @@ h1 *,
 h2,
 h3 {
   font-family: serif;
+  font-weight: 300;
 }
 
 h1 {
