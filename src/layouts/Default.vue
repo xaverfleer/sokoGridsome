@@ -202,6 +202,10 @@ body {
   max-width: 900px;
 }
 
+button {
+  font-size: inherit;
+}
+
 h1,
 h1 *,
 h2,
