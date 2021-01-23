@@ -205,6 +205,7 @@ h2 {
 html {
   font-family: sans-serif;
   font-size: 45%;
+  font-size: clamp(45%, 1vw, 65%);
 }
 
 strong,
