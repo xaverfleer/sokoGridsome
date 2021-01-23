@@ -460,6 +460,13 @@
 export default {
   metaInfo: {
     title: "Nährende Kommunikation mit deinem Baby",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Selbstwert, Selbstbewusstsein und Selbstvertrauen stärken. Onlinekurs für subjektorientierte Kommunikation mit deinem Baby.",
+      },
+    ],
   },
 };
 </script>
