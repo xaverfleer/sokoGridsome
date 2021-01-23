@@ -514,7 +514,7 @@ export default {
   border-radius: 5px;
   /* max-width: 12em; */
   padding: 0.75em;
-  min-height: 46px;
+  /* min-height: 46px; */
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
