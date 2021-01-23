@@ -517,6 +517,27 @@ export default {
   margin: 1em 0 3em;
 }
 
+.progress-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.progress-list__item::before {
+  flex: 0 0 32px;
+  height: 32px;
+  content: " ";
+  background-image: url(../assets/im-aufbau.svg);
+  background-image: url(../assets/im-aufbau.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 1em 0 2em;
+}
+
+.progress-list__item--done::before {
+  background-image: url(../assets/fertig.svg);
+}
+
 .section {
   padding: 2em 1em 1em;
   border-radius: 5px;
