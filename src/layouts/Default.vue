@@ -202,6 +202,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 html {
   font-family: sans-serif;
   font-size: 45%;
