@@ -187,6 +187,36 @@ module.exports = {
 </script>
 
 <style>
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("../assets/source-sans-pro/source-sans-pro-v14-latin-300.woff2")
+    format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("../assets/source-sans-pro/source-sans-pro-v14-latin-300italic.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("../assets/source-sans-pro/source-sans-pro-v14-latin-600.woff2")
+    format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("../assets/source-sans-pro/source-sans-pro-v14-latin-600italic.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
 * {
   line-height: 1.3em;
 }
@@ -228,15 +258,17 @@ h3 {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: source-sans-pro, sans-serif;
   font-size: 45%;
   font-size: clamp(45%, 1vw, 65%);
+  letter-spacing: 0.02em;
   scroll-behavior: smooth;
+  word-spacing: 0.2em;
 }
 
 strong,
 strong * {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 textarea {
@@ -255,7 +287,7 @@ textarea {
 
 .footer a {
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .header {
@@ -345,6 +377,7 @@ textarea {
 }
 
 .nav__entry--primary {
+  font-weight: 600;
   padding: 5px 10px;
   border: 1px solid #966b40;
   border-radius: 5px;

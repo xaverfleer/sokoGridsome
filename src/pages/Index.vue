@@ -523,7 +523,7 @@ export default {
 
 .button--2ndary {
   color: #4ba747;
-  font-weight: 800;
+  font-weight: 600;
   margin: 0 0.5em;
 }
 
@@ -548,7 +548,7 @@ export default {
 .button--primary,
 .button--primary a:any-link {
   background-color: #4ba747;
-  font-weight: 500;
+  font-weight: 600;
   color: #ffffff;
 }
 
