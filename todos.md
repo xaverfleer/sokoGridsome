@@ -4,6 +4,7 @@
 - add order page and fix order links
 - add amplitude
 - wir -> ich, uns -> ich, unser -> mein
+- go through Google Lighthouse
 
 --
 
