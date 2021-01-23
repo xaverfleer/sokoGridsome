@@ -3,7 +3,7 @@
     <header class="header">
       <div class="header__emotion"></div>
       <div class="header__content">
-        <a class="header__home" href="./index.html">
+        <g-link class="header__home" to="/">
           <g-image
             alt="Logo mit Giesskanne, die den inneren Baum deines Kindes
           nährt."
@@ -11,7 +11,7 @@
             src="~/assets/logo.png"
             title="Zur Startseite"
           />
-        </a>
+        </g-link>
         <nav class="nav">
           <a
             class="nav__entry nav__entry--primary"
