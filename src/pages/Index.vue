@@ -515,6 +515,7 @@ export default {
 
 .button {
   border: none;
+  cursor: pointer;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
