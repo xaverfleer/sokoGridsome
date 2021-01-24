@@ -221,6 +221,10 @@ module.exports = {
   line-height: 1.3em;
 }
 
+:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
 }

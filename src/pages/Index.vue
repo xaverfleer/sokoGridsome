@@ -663,7 +663,6 @@ export default {
 
 .form-entry__input {
   border-radius: 0.5em;
-  outline: none;
   padding: 1.2rem;
 }
 
