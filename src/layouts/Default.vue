@@ -73,8 +73,6 @@ query {
 module.exports = {
   mounted: () => {
     // /* global XMLHttpRequest, alert, amplitude, document, localStorage, window */
-    import LogRocket from "logrocket";
-
     const header = document.querySelector(".header");
     const nav = document.querySelector(".nav");
     // const formElem = document.querySelector("form");
@@ -84,14 +82,18 @@ module.exports = {
 
     function consentRequiringActions() {
       if (window.location.toString().indexOf("localhost") === -1) {
-        LogRocket.init("yxvjmb/soko");
-        //     amplitude.getInstance().logEvent("Page loaded");
+        const LogRocket = require("logrocket");
+        const amplitudeSnippet = require("../assets/amplitudeSnippet");
 
-        // document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
-        //   e.addEventListener("click", function logEvent() {
-        //     amplitude.getInstance().logEvent("Jetzt buchen");
-        //   });
-        // });
+        LogRocket.init("yxvjmb/soko");
+
+        amplitudeSnippet();
+        amplitude.getInstance().logEvent("Page loaded");
+        document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
+          e.addEventListener("click", function logEvent() {
+            amplitude.getInstance().logEvent("Jetzt buchen");
+          });
+        });
       }
     }
 
