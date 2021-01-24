@@ -43,6 +43,21 @@
       </div>
       <div class="footer__copyright">© 2021 Fleer & Fleer</div>
     </footer>
+    <div class="gdpr">
+      <h3>Diese Webseite verwendet Cookies</h3>
+      <p>
+        Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer Website
+        zu ermöglichen. Wenn du auf "Akzeptieren" klickst, stimmst du der
+        Verwendung von Cookies durch uns zu. Wenn du unsere Website weiterhin
+        ohne irgendeine Aktion nutzt, verwenden wir keine Cookies.
+      </p>
+      <div class="buttons">
+        <button class="button button--primary" id="gdpr__accept">
+          Akzeptieren
+        </button>
+      </div>
+      <button class="button--gdpr-ignore" id="gdpr__ignore"></button>
+    </div>
   </div>
 </template>
 
@@ -64,8 +79,8 @@ module.exports = {
     const nav = document.querySelector(".nav");
     // const formElem = document.querySelector("form");
 
-    // const hideGdpr = () =>
-    //   document.querySelector(".gdpr").setAttribute("style", "display: none;");
+    const hideGdpr = () =>
+      document.querySelector(".gdpr").setAttribute("style", "display: none;");
 
     // function consentRequiringActions() {
     //   if (window.location.toString().indexOf("localhost") === -1) {
@@ -80,36 +95,36 @@ module.exports = {
     //   }
     // }
 
-    // const storageGdpr = localStorage.getItem("soko-gdpr");
+    const storageGdpr = localStorage.getItem("soko-gdpr");
 
-    // if (["accepted", "ignored"].indexOf(storageGdpr) >= 0) {
-    //   hideGdpr();
-    // } else {
-    //   const elems = {
-    //     accept: document.getElementById("gdpr__accept"),
-    //     ignore: document.getElementById("gdpr__ignore"),
-    //   };
-    //   const handle = {
-    //     accept: () => {
-    //       localStorage.setItem("soko-gdpr", "accepted");
-    //       hideGdpr();
-    //       handle.unbind();
-    //       consentRequiringActions();
-    //     },
-    //     ignore: () => {
-    //       localStorage.setItem("soko-gdpr", "ignored");
-    //       hideGdpr();
-    //       handle.unbind();
-    //     },
-    //     unbind: () => {
-    //       elems.accept.removeEventListener("click", handle.accept);
-    //       elems.ignore.removeEventListener("click", handle.ignore);
-    //     },
-    //   };
+    if (["accepted", "ignored"].indexOf(storageGdpr) >= 0) {
+      hideGdpr();
+    } else {
+      const elems = {
+        accept: document.getElementById("gdpr__accept"),
+        ignore: document.getElementById("gdpr__ignore"),
+      };
+      const handle = {
+        accept: () => {
+          localStorage.setItem("soko-gdpr", "accepted");
+          hideGdpr();
+          handle.unbind();
+          consentRequiringActions();
+        },
+        ignore: () => {
+          localStorage.setItem("soko-gdpr", "ignored");
+          hideGdpr();
+          handle.unbind();
+        },
+        unbind: () => {
+          elems.accept.removeEventListener("click", handle.accept);
+          elems.ignore.removeEventListener("click", handle.ignore);
+        },
+      };
 
-    //   elems.accept.addEventListener("click", handle.accept);
-    //   elems.ignore.addEventListener("click", handle.ignore);
-    // }
+      elems.accept.addEventListener("click", handle.accept);
+      elems.ignore.addEventListener("click", handle.ignore);
+    }
 
     // if (storageGdpr === "accepted") consentRequiringActions();
 
@@ -279,6 +294,20 @@ textarea {
   font-family: inherit;
 }
 
+.button--gdpr-ignore {
+  background-image: url(../assets/close-24px--brown.svg);
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  background-color: transparent;
+  background-position: center;
+  border: none;
+  margin: 7px;
+}
+
 .footer {
   background-color: #966b40;
   box-sizing: border-box;
@@ -292,6 +321,14 @@ textarea {
 .footer a {
   color: #ffffff;
   font-weight: 600;
+}
+
+.gdpr {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #e5cdad;
+  padding: 1em;
 }
 
 .header {
