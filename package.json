@@ -1,5 +1,5 @@
 {
-  "name": "sokoGridsome",
+  "name": "soko-gridsome",
   "private": true,
   "scripts": {
     "build": "gridsome build",
