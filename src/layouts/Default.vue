@@ -73,7 +73,7 @@ query {
 module.exports = {
   mounted: () => {
     // /* global XMLHttpRequest, alert, amplitude, document, localStorage, window */
-    // import LogRocket from "logrocket";
+    import LogRocket from "logrocket";
 
     const header = document.querySelector(".header");
     const nav = document.querySelector(".nav");
@@ -82,18 +82,18 @@ module.exports = {
     const hideGdpr = () =>
       document.querySelector(".gdpr").setAttribute("style", "display: none;");
 
-    // function consentRequiringActions() {
-    //   if (window.location.toString().indexOf("localhost") === -1) {
-    //     LogRocket.init("yxvjmb/soko");
-    //     amplitude.getInstance().logEvent("Page loaded");
+    function consentRequiringActions() {
+      if (window.location.toString().indexOf("localhost") === -1) {
+        LogRocket.init("yxvjmb/soko");
+        //     amplitude.getInstance().logEvent("Page loaded");
 
-    //     document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
-    //       e.addEventListener("click", function logEvent() {
-    //         amplitude.getInstance().logEvent("Jetzt buchen");
-    //       });
-    //     });
-    //   }
-    // }
+        // document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
+        //   e.addEventListener("click", function logEvent() {
+        //     amplitude.getInstance().logEvent("Jetzt buchen");
+        //   });
+        // });
+      }
+    }
 
     const storageGdpr = localStorage.getItem("soko-gdpr");
 
