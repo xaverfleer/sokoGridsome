@@ -2,11 +2,22 @@
   "name": "soko-gridsome",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
+    "build": "npm run build:client && npm run build:lambda",
+    "build:client": "gridsome build",
+    "build:lambda": "netlify-lambda build src/netlify-functions",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "test": "tape 'src/**/*Test.js'"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "@sendgrid/mail": "^7.4.2",
+    "crypto": "^1.0.1",
+    "encoding": "^0.1.13",
+    "faunadb": "^4.0.0",
+    "gridsome": "^0.7.0",
+    "netlify-lambda": "^2.0.3"
+  },
+  "devDependencies": {
+    "tape": "^5.1.1"
   }
 }

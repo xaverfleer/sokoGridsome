@@ -1,0 +1,7 @@
+# [Reference](https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file)
+
+[build]
+  command="npm run build"
+  functionsSource = "src/netlify-functions"
+  functions = "dist/netlify-functions"
+  publish = "dist"
